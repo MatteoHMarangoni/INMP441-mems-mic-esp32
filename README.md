@@ -5,9 +5,9 @@ A real-time Mel-scaled spectrum analyzer using an ESP32 and an INMP441 I2S micro
 /* pin connections
 ESP32 3.3V to VDD of INMP441
 ESP32 GND to GND and L/R of INMP441
-ESP32 GPIO25 to WS of INMP441
-ESP32 GPIO33 to SD of INMP441
-ESP32 GPIO32 to SCK of INMP441 */
+ESP32 GPIO16 to WS of INMP441
+ESP32 GPIO17 to SD of INMP441
+ESP32 GPIO05 to SCK of INMP441 */
 
 For the visualiser: 
 

@@ -3,9 +3,9 @@
 #include <arduinoFFT.h>
 
 // I2S Microphone Pins
-#define I2S_WS  25
-#define I2S_SD  33
-#define I2S_SCK 32
+#define I2S_WS  16 // 25
+#define I2S_SD  17 // 33
+#define I2S_SCK 5 // 32
 
 // FFT Parameters
 #define SAMPLES 1024
