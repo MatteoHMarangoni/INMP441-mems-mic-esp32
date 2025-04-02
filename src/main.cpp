@@ -12,10 +12,10 @@ ESP32 GPIO32 to SCK of INMP441 */
 #include <Arduino.h>
 #include <driver/i2s.h>
 
-// I2S Pin Configuration for INMP441 Microphone
-#define I2S_WS  25  // Word Select (L/R Clock)
-#define I2S_SD  33  // Serial Data (DOUT)
-#define I2S_SCK 32  // Serial Clock (BCLK)
+// I2S Microphone Pins
+#define I2S_WS  16 // 25
+#define I2S_SD  17 // 33
+#define I2S_SCK 4 // 32
 
 // Sample rate and buffer size
 #define SAMPLE_RATE 16000  // Works well for speech applications
@@ -85,7 +85,7 @@ void readI2SData() {
   }
 
   int numSamples = bytesRead / sizeof(int16_t);
-  Serial.printf("Bytes Read: %d, Samples: %d\n", bytesRead, numSamples);
+  //Serial.printf("Bytes Read: %d, Samples: %d\n", bytesRead, numSamples);
 
   // Process samples and calculate amplitude
   int localSumAmplitude = 0;
